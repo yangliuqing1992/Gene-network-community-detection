@@ -2,7 +2,7 @@ label=function(x){
   return(which(x==1))
 }
 set.seed(6666)
-#K=5
+#K=5, FIVE CLUSTERS
 m=rmultinom(20000, size = 1, prob = c(0.3,0.3,0.2,0.1,0.1))
 #class labels
 l=apply(m,2,label)
